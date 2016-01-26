@@ -18,12 +18,12 @@ def spit_file_on_browser(file_name):
     return lines
 
 def read_file(file_path):
+
     if not opath.exists(file_path):
         return 'Sorry you have wrong file'
     with open(file_path,'r') as file:
         for line in file.readlines():
             yield line
-
 
 if __name__ == "__main__":
     app.run()

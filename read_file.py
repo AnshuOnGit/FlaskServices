@@ -16,7 +16,7 @@ def spit_file_on_browser(file_name):
 
 def read_file(file_path):
     if not opath.exists(file_path):
-        return 'Sorry you have wrong file.'
+        return 'Sorry you have wrong file'
     with open(file_path,'r') as file:
         return file.read()
 

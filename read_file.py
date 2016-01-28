@@ -22,10 +22,8 @@ def hello(user_name):
 
 @app.route("/file/<file_name>")
 def spit_file_on_browser(file_name):
-    lines = ''
-    for line in read_file(file_name):
-        lines = lines + line + '<br>'
-    return lines
+    return send_from_directory(app.config['UPLOAD_FOLDER'],
+                               file_name)
 
 # For a given file, return whether it's an allowed type or not
 def allowed_file(filename):

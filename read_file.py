@@ -12,7 +12,7 @@ def hello():
 
 @app.route("/<user_name>")
 def hello(user_name):
-    return 'Hello, '+user_name
+    return 'Hello and Hi, '+user_name
 
 @app.route("/file/<file_name>")
 def spit_file_on_browser(file_name):

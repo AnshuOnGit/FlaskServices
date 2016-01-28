@@ -12,7 +12,8 @@ def hello():
 
 @app.route("/file/<file_name>")
 def spit_file_on_browser(file_name):
-    if opath.exists('uploads/'+file_name):
+    print(file_name)
+    if opath.exists('uploads/'+str(file_name)):
         return send_from_directory('uploads',file_name)
     else:
         return("File does not exist on server.")

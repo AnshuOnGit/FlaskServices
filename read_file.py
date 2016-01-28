@@ -10,6 +10,10 @@ app.config.from_object(__name__)
 def hello():
     return 'Hello, World!'
 
+@app.route("/<user_name>")
+def hello(user_name):
+    return 'Hello, '+user_name
+
 @app.route("/file/<file_name>")
 def spit_file_on_browser(file_name):
     lines = ''

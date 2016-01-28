@@ -1,0 +1,24 @@
+{
+  "name": "file_app",
+  "homepage": "https://github.com/AnshuOnGit/FlaskServices",
+  "authors": [
+    "AnshuOnGit <anshu.kumar726@gmail.com>"
+  ],
+  "description": "simple flask application",
+  "main": "read_file.py",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+ "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

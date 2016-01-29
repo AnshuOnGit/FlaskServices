@@ -27,4 +27,3 @@ def read_file(file_path):
 
 if __name__ == "__main__":
     app.run()
-    #print(read_file('readFile.py'))
